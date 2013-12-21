@@ -1,0 +1,31 @@
+################################################################################
+
+ErrorDocument 400 /index.php
+ErrorDocument 403 /index.php
+ErrorDocument 404 /index.php
+
+################################################################################
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.*)$ - [F]
+
+RewriteBase /
+RewriteRule ^images(.*)/$ 		/index.php [R,L]
+RewriteRule ^jscript(.*)/$ 		/index.php [R,L]
+
+################################################################################
+
+PHP_Flag register_long_arrays 	on
+PHP_Flag register_globals 	off
+
+PHP_Flag output_buffering 	on
+PHP_Flag implicit_flush 	off
+
+PHP_Flag magic_quotes_gpc 	on
+PHP_Flag magic_quotes_runtime 	off
+
+PHP_Flag display_errors 	off
+PHP_Flag log_errors 		off
+
+################################################################################
