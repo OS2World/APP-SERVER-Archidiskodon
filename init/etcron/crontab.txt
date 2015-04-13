@@ -1,0 +1,8 @@
+#
+# check FTP servers constantly each 5 minutes
+*/5     *       *       *       *       root    cd D:/.../robots; C:/.../php ftp-check.php >NUL 2>NUL
+# detect new FTP servers once per week
+0       3       *       *       5       root    cd D:/.../robots; C:/.../php ftp-detect.php >NUL 2>NUL
+# browse known FTP servers once per week
+0       4       *       *       6       root    cd D:/.../robots; C:/.../php ftp-browse.php >NUL 2>NUL
+#

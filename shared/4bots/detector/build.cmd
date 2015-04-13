@@ -1,0 +1,1 @@
+@CALL ../4os2/make.cmd pinger.c pinger.def

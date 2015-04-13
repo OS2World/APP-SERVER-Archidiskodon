@@ -1,0 +1,1 @@
+<? function strreplace ($haystack, $needle, $str) { return str_replace ($needle, $str, $haystack); } ?>

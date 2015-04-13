@@ -1,0 +1,10 @@
+C:\MySQL\bin >> start mysql --user=root
+
+mysql> CREATE DATABASE archidiskodon;
+mysql> GRANT ALL ON archidiskodon.* TO 'root';
+mysql> ^D
+
+C:\MySQL\bin >> type D:\...\sql\files.sql | mysql --user=root --database=archidiskodon
+C:\MySQL\bin >> type D:\...\sql\hosts.sql | mysql --user=root --database=archidiskodon
+C:\MySQL\bin >> type D:\...\sql\robot.sql | mysql --user=root --database=archidiskodon
+C:\MySQL\bin >> type D:\...\sql\words.sql | mysql --user=root --database=archidiskodon

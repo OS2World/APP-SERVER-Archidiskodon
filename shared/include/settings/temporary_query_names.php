@@ -1,0 +1,1 @@
+<? $document->{'temporary_query_names'} = 'session, refresh'; ?>

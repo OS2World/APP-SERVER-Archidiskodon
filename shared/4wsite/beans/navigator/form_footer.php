@@ -1,0 +1,1 @@
+<? include ($current_path.'4wsite/beans/abstract/form_end.php'); ?>
